@@ -1,0 +1,91 @@
+// Core variables and mixins
+@import "_/bootstrap/less/bootstrap.less";
+
+// GravityForms
+@import "_/css/gravityforms.less";
+
+* { box-sizing: border-box; -moz-box-sizing: border-box; } /* Fix box sizing bug*/
+
+img { max-width: 100% !important; } /* Fix for google map */
+
+.aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+	margin: 0 20px 10px 0;
+}
+.alignright {
+	float: right;
+	margin: 0 0 10px 20px;
+}
+.wp-caption {
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	margin: 10px;
+	padding-top: 4px;
+	text-align: center;
+}
+.wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.clear {
+	clear: both;
+}
+
+a:focus { 
+    outline: none; 
+}
+
+body{
+	background: #fff;
+	color: #000;
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 0;
+}
+
+/* Content!
+-------------------------------------------------------------------------------*/
+
+/* Hack EX .ie7 .container{ margin: 0; }
+-------------------------------------------------------------------------------*/
+
+/* Media Query
+-------------------------------------------------------------------------------*/
+
+// usually 1200px
+@media (max-width: @screen-lg-desktop) {
+
+}
+
+// usually 992px
+@media (max-width: @screen-desktop) {
+	
+}
+
+// usually 768px
+@media (max-width: @screen-tablet) {
+
+}
+
+// usually 480px
+@media (max-width: @screen-phone) {
+
+}
