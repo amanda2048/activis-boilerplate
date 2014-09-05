@@ -1,5 +1,5 @@
 <?php
-foreach (glob(get_template_directory()."/_/{includes,lib}/*.php",GLOB_BRACE) as $inc) {
+foreach (glob(get_template_directory()."/_/{lib}/*.php",GLOB_BRACE) as $inc) {
    require_once($inc);
 }
 
