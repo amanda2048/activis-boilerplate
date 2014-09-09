@@ -43,7 +43,9 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                      <?php wp_list_pages('title_li='); ?>
-                     <li><?php echo icl_post_languages(); ?></li>
+                     <?php if (function_exists('icl_post_languages')): ?>
+                     	<li><?php echo icl_post_languages(); ?></li>
+                     <?php endif; ?>
                 </ul>
             </div><!--/.navbar-collapse -->
         </div>
