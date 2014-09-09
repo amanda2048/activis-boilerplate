@@ -177,8 +177,10 @@
 	add_filter( 'wpseo_use_page_analysis', 'yoast_remove_dot', 10, 1 );
 
 	// change validation message error in english
-	if( ICL_LANGUAGE_CODE == 'en' ){
-		add_filter("gform_validation_message", "change_message", 10, 2);
+	if( defined('ICL_LANGUAGE_CODE') ){
+		if( ICL_LANGUAGE_CODE == 'en' ){
+			add_filter("gform_validation_message", "change_message", 10, 2);
+		}
 	}
 	function change_message($message, $form){
 	  return '<div class="validation_error">The form does not appear correctly filled. Errors have been highlighted below.</div>';
