@@ -70,3 +70,6 @@ function is_tree($pid) {      // $pid = The ID of the page we're looking for pag
 	}
         return false;  // we aren't at the page, and the page is not an ancestor
 }
+
+// var_dump() formating
+ini_set('html_errors', true);
